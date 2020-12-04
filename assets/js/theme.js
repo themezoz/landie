@@ -78,7 +78,7 @@ var colors = {
   warning: '#f5803e',
   danger: '#e63757',
   light: '#f9fafd',
-  dark: '#0b1727'
+  dark: '#000'
 };
 var grays = {
   white: '#fff',
@@ -385,11 +385,97 @@ anchors.options = {
   icon: '#'
 };
 anchors.add('[data-anchor]');
+/*-----------------------------------------------
+|   Top navigation opacity on scroll
+-----------------------------------------------*/
+
+var navbarInit = function navbarInit() {
+  var Selector = {
+    NAVBAR: '[data-navbar-on-scroll]',
+    NAVBAR_COLLAPSE: '.navbar-collapse',
+    NAVBAR_TOGGLER: '.navbar-toggler'
+  };
+  var ClassNames = {
+    COLLAPSED: 'collapsed'
+  };
+  var Events = {
+    SCROLL: 'scroll',
+    SHOW_BS_COLLAPSE: 'show.bs.collapse',
+    HIDE_BS_COLLAPSE: 'hide.bs.collapse',
+    HIDDEN_BS_COLLAPSE: 'hidden.bs.collapse'
+  };
+  var DataKey = {
+    NAVBAR_ON_SCROLL: 'navbar-light-on-scroll'
+  };
+  var navbar = document.querySelector(Selector.NAVBAR);
+  console.log(navbar);
+
+  if (navbar) {
+    var windowHeight = window.innerHeight;
+    var html = document.documentElement;
+    var navbarCollapse = navbar.querySelector(Selector.NAVBAR_COLLAPSE);
+
+    var allColors = _objectSpread(_objectSpread({}, utils.colors), utils.grays);
+
+    var name = utils.getData(navbar, DataKey.NAVBAR_ON_SCROLL);
+    var colorName = Object.keys(allColors).includes(name) ? name : 'light';
+    var color = allColors[colorName];
+    var bgClassName = "bg-".concat(colorName);
+    var colorRgb = utils.hexToRgb(color);
+
+    var _window$getComputedSt = window.getComputedStyle(navbar),
+        backgroundImage = _window$getComputedSt.backgroundImage;
+
+    var transition = 'background-color 0.35s ease';
+    navbar.style.backgroundImage = 'none'; // Change navbar background color on scroll
+
+    window.addEventListener(Events.SCROLL, function () {
+      var scrollTop = html.scrollTop;
+      var alpha = scrollTop / windowHeight * 2;
+      alpha >= 1 && (alpha = 1);
+      navbar.style.backgroundColor = "rgba(".concat(colorRgb[0], ", ").concat(colorRgb[1], ", ").concat(colorRgb[2], ", ").concat(alpha, ")");
+      navbar.style.backgroundImage = alpha > 0 || utils.hasClass(navbarCollapse, 'show') ? backgroundImage : 'none';
+    }); // Toggle bg class on window resize
+
+    utils.resize(function () {
+      var breakPoint = utils.getBreakpoint(navbar);
+
+      if (window.innerWidth > breakPoint) {
+        navbar.classList.remove(bgClassName); // document.getElementById('navbarSupportedContent').classList.remove(bgClassName);
+
+        navbar.style.backgroundImage = html.scrollTop ? backgroundImage : 'none';
+        navbar.style.transition = 'none';
+      } else if (!utils.hasClass(navbar.querySelector(Selector.NAVBAR_TOGGLER), ClassNames.COLLAPSED)) {
+        navbar.classList.remove(bgClassName); // document.getElementById('navbarSupportedContent').classList.add(bgClassName);
+
+        navbar.style.backgroundImage = backgroundImage;
+      }
+
+      if (window.innerWidth <= breakPoint) {
+        navbar.style.transition = utils.hasClass(navbarCollapse, 'show') ? transition : 'none'; // document.getElementById('navbarSupportedContent').classList.add(bgClassName);
+        // navbar.classList.remove(bgClassName);
+      }
+    });
+    navbarCollapse.addEventListener(Events.SHOW_BS_COLLAPSE, function () {
+      navbar.classList.add(bgClassName);
+      navbar.style.backgroundImage = backgroundImage;
+      navbar.style.transition = transition;
+    });
+    navbarCollapse.addEventListener(Events.HIDE_BS_COLLAPSE, function () {
+      navbar.classList.remove(bgClassName);
+      !html.scrollTop && (navbar.style.backgroundImage = 'none');
+    });
+    navbarCollapse.addEventListener(Events.HIDDEN_BS_COLLAPSE, function () {
+      navbar.style.transition = 'none';
+    });
+  }
+};
 /* -------------------------------------------------------------------------- */
 
 /*                                   choices                                   */
 
 /* -------------------------------------------------------------------------- */
+
 
 var choicesInit = function choicesInit() {
   if (window.Choices) {
@@ -611,8 +697,8 @@ var navbarDarkenOnScroll = function navbarDarkenOnScroll() {
     var bgClassName = "bg-".concat(colorName);
     var colorRgb = utils.hexToRgb(color);
 
-    var _window$getComputedSt = window.getComputedStyle(navbar),
-        backgroundImage = _window$getComputedSt.backgroundImage;
+    var _window$getComputedSt2 = window.getComputedStyle(navbar),
+        backgroundImage = _window$getComputedSt2.backgroundImage;
 
     var transition = 'background-color 0.35s ease';
     navbar.style.backgroundImage = 'none'; // Change navbar background color on scroll
@@ -906,8 +992,8 @@ var wizardInit = function wizardInit() {
       });
     });
   }
-}; // import handleNavbarVerticalCollapsed from './navbar-vertical';
-// import echartsInit from './charts/echarts';
+}; // import echartsInit from './charts/echarts';
+// import progressBar from './progressbar';
 // import progressBar from './progressbar';
 // import tooltipInit from './tooltip';
 // import popoverInit from './popover';
@@ -949,7 +1035,8 @@ var wizardInit = function wizardInit() {
 // /* -------------------------------------------------------------------------- */
 
 
-docReady(detectorInit); // docReady(handleNavbarVerticalCollapsed);
+docReady(detectorInit);
+docReady(navbarInit); // docReady(handleNavbarVerticalCollapsed);
 // docReady(echartsInit.totalOrder);
 // docReady(echartsInit.weeklySales);
 // docReady(echartsInit.marketShare);
