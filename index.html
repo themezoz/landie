@@ -21,7 +21,6 @@
     <link rel="manifest" href="assets/img/favicons/manifest.json">
     <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
     <meta name="theme-color" content="#ffffff">
-    <script src="assets/js/config.navbar-vertical.js"></script>
 
     <!-- ===============================================-->
     <!--    Stylesheets-->
@@ -34,28 +33,28 @@
     <!--    Main Content-->
     <!-- ===============================================-->
     <main class="main" id="top">
-      <nav class="navbar navbar-light navbar-expand-lg fixed-top py-2 px-0" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container" id="navbar"><button class="navbar-toggler" id="btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand font-weight-bold ml-auto mr-0 d-block d-lg-none" href="index.html"> Landie </a><a class="btn btn-primary px-3 px-md-5 ml-auto d-block d-lg-none" href="#!">Buy now</a>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-2 px-0" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand font-weight-bold ml-auto mr-0 d-block d-lg-none" href="index.html"> Landie </a><a class="btn btn-primary px-3 px-md-5 ml-auto d-block d-lg-none" href="#!">Buy now</a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <hr class="text-100 mb-0" />
             <ul class="navbar-nav">
-              <li class="nav-item text-muted"><a class="nav-link text-500 px-2 active" aria-current="page" href="index.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link text-500 px-2" href="#">About</a></li>
-              <li class="nav-item"><a class="nav-link text-500 px-2" href="#">Contact </a></li>
+              <li class="nav-item text-muted"><a class="nav-link text-500 px-2 ml-lg-n2 active" aria-current="page" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link text-500 px-2" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link text-500 px-2" href="#pricing">Pricing</a></li>
             </ul><a class="navbar-brand font-weight-bold ml-auto mr-0 d-none d-lg-block" href="index.html"> Landie </a><a class="btn btn-primary px-3 px-md-5 ml-auto d-none d-lg-block" href="#!">Buy now</a>
           </div>
         </div>
       </nav>
-      <section class="py-0">
+      <section class="py-8 py-md-10" id="home">
         <div class="bg-holder d-none d-lg-block" style="background-image:url(assets/img/illustrations/1.png);background-position:right top;background-size:contain;"></div>
         <!--/.bg-holder-->
         <div class="bg-holder  d-lg-none" style="background-image:url(assets/img/illustrations/1-1.png);background-position:left top;background-size:cover;"></div>
         <!--/.bg-holder-->
         <div class="container">
-          <div class="row align-items-center min-vh-100">
+          <div class="row align-items-center">
             <div class="col-md-7 col-lg-6 text-md-left text-center">
               <h1>Introduce Your Product<br /> Quickly &amp; Effectively</h1>
-              <p class="lead text-muted"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus vel ipsum aliquid, tenetur dolorem necessitatibus quaerat iure. Ex, officia esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptas maiores, at quas cumque et!</p>
+              <p class="lead text-muted"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus vel ipsum aliquid, tenetur dolorem necessitatibus quaerat iure. Ex, officia esse! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               <p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates aliquam nihil unde libero maxime tempore.</p>
               <div class="pt-4"><a class="btn btn-primary mr-3" href="#">Purchase UI Kit </a><a class="btn btn-outline-primary" href="#">Learn More</a></div>
             </div>
@@ -73,15 +72,17 @@
               <div class="row">
                 <div class="col-12">
                   <h2>Light, Fast &amp; Powerful</h2>
-                  <p class="lead text-muted mb-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, id commodi facere quisquam nemo voluptate atque, voluptatum illo consequuntur consectetur aspernatur error facilis debitis quasi?</p>
+                  <p class="lead text-muted mb-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. In laboriosam est accusamus odio blanditiis quo eaque voluptas doloribus, suscipit laborum.</p>
                   <p class="lead text-muted mb-3"> Lorem ipsum dolor sit,amet consectetur adipisicing elit. Animi iste corrupti ex facilis sint veritatis!</p>
                 </div>
-                <div class="col-6 pt-5"><img class="mb-3" src="assets/img/icons/icon-1.png" alt="" />
-                  <h5>Get off to a quick start</h5>
+              </div>
+              <div class="row">
+                <div class="col-6 pt-5"><img class="mb-3" src="assets/img/icons/folder.png" width="36" height="36" alt="" />
+                  <h5> Revenue Generation</h5>
                   <p class="text-muted mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                 </div>
-                <div class="col-6 pt-5"><img class="mb-3" src="assets/img/icons/icon-1.png" alt="" />
-                  <h5>Get off to a quick start</h5>
+                <div class="col-6 pt-5"><img class="mb-3" src="assets/img/icons/layers.png" width="36" height="36" alt="" />
+                  <h5>Business Plan</h5>
                   <p class="text-muted mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                 </div>
               </div>
@@ -97,30 +98,34 @@
       <!-- <section> begin ============================-->
       <section class="pt-4 pt-md-5">
         <div class="container">
-          <div class="row justify-content-lg-between">
-            <div class="col-lg-5"><img class="img-fluid mb-5" src="assets/img/gallery/1.png" alt="" /></div>
-            <div class="col-lg-5">
+          <div class="row justify-content-lg-between align-items-center">
+            <div class="col-lg-5 order-md-0"><img class="img-fluid mb-5 mb-lg-0 order-md-1" src="assets/img/gallery/1.png" alt="" /></div>
+            <div class="col-lg-6">
               <div class="row">
                 <div class="col-12">
-                  <h2>Light, Fast &amp; Powerful</h2>
-                  <p class="lead text-muted mb-3"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium non voluptatum at sed minima vitae amet! Officia, ut sequi, consequatur, quibusdam aspernatur esse sit ratione sunt illo atque voluptate distinctio recusandae rem nisi provident quas?</p>
+                  <h2> Making The Web a Better Place</h2>
+                  <p class="lead text-muted mb-3"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium non voluptatum at sed minima vitae amet! Officia, ut sequi, consequaturs ut sequi</p>
                   <p class="lead text-muted mb-3"> Lorem ipsum dolor sit,amet consectetur adipisicing elit. Animi iste corrupti ex facilis sint veritatis!</p>
                 </div>
-                <div class="col-6 pt-5"><img class="mb-3" src="assets/img/icons/icon-1.png" alt="" />
-                  <h5>Get off to a quick start</h5>
-                  <p class="text-muted mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reiciendis reprehenderit, dolore repellendus aperiam recusandae?</p>
+              </div>
+              <div class="row">
+                <div class="col-6 pt-5"><img class="mb-3" src="assets/img/icons/home.png" width="36" height="36" alt="" />
+                  <h5>Marketing Strategy</h5>
+                  <p class="text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nulla perspiciatis !</p>
                 </div>
-                <div class="col-6 pt-5"><img class="mb-3" src="assets/img/icons/icon-1.png" alt="" />
-                  <h5>Get off to a quick start</h5>
-                  <p class="text-muted mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reiciendis reprehenderit, dolore repellendus aperiam recusandae? </p>
+                <div class="col-6 pt-5"><img class="mb-3" src="assets/img/icons/file.png" width="36" height="36" alt="" />
+                  <h5>Marketing Articles</h5>
+                  <p class="text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nulla perspiciatis ! </p>
                 </div>
-                <div class="col-6 pt-5"><img class="mb-3" src="assets/img/icons/icon-1.png" alt="" />
-                  <h5>Get off to a quick start</h5>
-                  <p class="text-muted mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reiciendis reprehenderit, dolore repellendus aperiam recusandae?</p>
+              </div>
+              <div class="row">
+                <div class="col-6 pt-5"><img class="mb-3" src="assets/img/icons/chat.png" width="36" height="36" alt="" />
+                  <h5>Marketing Resources</h5>
+                  <p class="text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nulla perspiciatis !</p>
                 </div>
-                <div class="col-6 pt-5"><img class="mb-3" src="assets/img/icons/icon-1.png" alt="" />
-                  <h5>Get off to a quick start</h5>
-                  <p class="text-muted mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reiciendis reprehenderit, dolore repellendus aperiam recusandae? </p>
+                <div class="col-6 pt-5"><img class="mb-3" src="assets/img/icons/calculator.png" width="36" height="36" alt="" />
+                  <h5>Calculators</h5>
+                  <p class="text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nulla perspiciatis ! </p>
                 </div>
               </div>
             </div>
@@ -138,7 +143,7 @@
           <div class="row align-items-center">
             <div class="col-md-6 col-lg-6 order-md-0"><img class="img-fluid mb-5 mb-md-0" src="assets/img/illustrations/a-1.png" width="480" height="316" alt="" /></div>
             <div class="col-md-6 col-lg-6 text-center text-md-left">
-              <h2>Light, Fast &amp; Powerful</h2>
+              <h2>Captivating &amp; Creative Elements</h2>
               <p class="lead text-muted mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus vel ipsum aliquid, tenetur dolorem necessitatibus quaerat iure. Ex, officia esse!</p>
               <p class="lead text-muted mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi iste corrupti ex facilis sint veritatis!</p>
             </div>
@@ -154,9 +159,9 @@
       <section class="pt-4 pt-md-5">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-md-6 col-lg-6 order-md-0"><img class="img-fluid mb-5 mb-md-0" src="assets/img/illustrations/a-2.png" width="480" height="316" alt="" /></div>
-            <div class="col-md-6 col-lg-6 text-center text-md-left">
-              <h2>Light, Fast &amp; Powerful</h2>
+            <div class="col-md-6 order-md-0"><img class="img-fluid mb-5 mb-md-0" src="assets/img/illustrations/a-2.png" width="480" height="316" alt="" /></div>
+            <div class="col-md-6 text-center text-md-left">
+              <h2>Ready-to-Go Inner Pages</h2>
               <p class="lead text-muted mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus vel ipsum aliquid, tenetur dolorem necessitatibus quaerat iure. Ex, officia esse!</p>
               <p class="lead text-muted mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi iste corrupti ex facilis sint veritatis!</p>
             </div>
@@ -174,9 +179,9 @@
           <div class="row align-items-center">
             <div class="col-md-6 col-lg-6 order-md-0"><img class="img-fluid mb-5 mb-md-0" src="assets/img/illustrations/a-3.png" width="480" height="316" alt="" /></div>
             <div class="col-md-6 col-lg-6 text-center text-md-left">
-              <h2>Light, Fast &amp; Powerful</h2>
+              <h2>Bringing New IT Business</h2>
               <p class="lead text-muted mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus vel ipsum aliquid, tenetur dolorem necessitatibus quaerat iure. Ex, officia esse!</p>
-              <p class="lead text-muted mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi iste corrupti ex facilis sint veritatis!</p><a class="btn btn-info" href="#">Purchase Now </a>
+              <p class="lead text-muted mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi iste corrupti ex facilis sint veritatis!</p><a class="btn btn-primary" href="#">Purchase Now </a>
             </div>
           </div>
         </div><!-- end of .container-->
@@ -187,23 +192,27 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="pt-4 pt-md-5">
+      <section class="pt-4 pt-md-5" id="about">
         <div class="container">
-          <div class="row align-items-center g-5">
-            <div class="col-md-5 col-lg-6 col-xl-5 order-md-1"><img class="img-fluid mb-5 order-md-0" src="assets/img/gallery/Samsung.png" alt="" /></div>
-            <div class="col-md-7 col-lg-6 col-xl-7">
+          <div class="row align-items-center justify-content-lg-between">
+            <div class="col-md-5 order-md-1"><img class="img-fluid mb-5 mb-md-0 order-md-0" src="assets/img/gallery/s.jpg" alt="" /></div>
+            <div class="col-md-7 col-lg-6">
               <div class="row">
                 <div class="col-12">
-                  <h2>Light, Fast &amp; Powerful</h2>
-                  <p class="lead text-muted mb-3"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium non voluptatum at sed minima vitae amet! Officia, ut sequi, consequatur, quibusdam aspernatur esse sit ratione sunt illo atque voluptate distinctio recusandae rem nisi provident quas?</p>
+                  <h2>Awesome For Startups &amp; Tech</h2>
+                  <p class="lead text-muted mb-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium, pariatur molestias illum quae deleniti suscipit voluptates veritatis accusantium !</p>
                   <p class="lead text-muted mb-3"> Lorem ipsum dolor sit,amet consectetur adipisicing elit. Animi iste corrupti ex facilis sint veritatis!</p>
                 </div>
-                <div class="col-12 pt-5"><img class="mb-3" src="assets/img/icons/icon-1.png" alt="" />
-                  <h5>Get off to a quick start</h5>
+              </div>
+              <div class="row">
+                <div class="col-12 pt-5"><img class="mb-3" src="assets/img/icons/idea.png" width="36" height="36" alt="" />
+                  <h5>Creative Minds</h5>
                   <p class="text-muted mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reiciendis reprehenderit, dolore repellendus aperiam recusandae?</p>
                 </div>
-                <div class="col-12 pt-5"><img class="mb-3" src="assets/img/icons/icon-1.png" alt="" />
-                  <h5>Get off to a quick start</h5>
+              </div>
+              <div class="row">
+                <div class="col-12 pt-5"><img class="mb-3" src="assets/img/icons/atomic.png" width="36" height="36" alt="" />
+                  <h5>Engineering &amp; Services</h5>
                   <p class="text-muted mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reiciendis reprehenderit, dolore repellendus aperiam recusandae? </p>
                 </div>
               </div>
@@ -221,20 +230,24 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="bg-100">
+      <section class="bg-100" id="pricing">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-8 col-lg-6 text-center">
               <h1>A Price To Suit Everyone</h1>
               <p class="lead text-muted mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo sequi odio iste minima, fugit molestias consectetur id ab ducimus incidunt.</p>
               <h1 class="font-weight-500 mb-0">$40</h1>
-              <p>Ui Design Kit</p><a class="btn btn-info rounded-0 px-5" href="#">Purchase Now</a>
+              <p>Ui Design Kit</p><a class="btn btn-primary px-5" href="#">Purchase Now</a>
             </div>
           </div>
         </div><!-- end of .container-->
       </section><!-- <section> close ============================-->
       <!-- ============================================-->
 
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
       <section class="pt-5 pb-2 bg-200">
         <div class="container">
           <div class="row justify-content-center">
@@ -242,10 +255,10 @@
               <p class="text-500">©2020 Yourcompany</p>
             </div>
             <div class="col-sm-6 col-md-4 text-md-center"> <a class="navbar-brand font-weight-bold" href="index.html"> Landie </a></div>
-            <div class="col-sm-6 col-md-4 text-sm-right mt-3 mt-sm-0"><a class="btn btn-sm btn-info rounded-0" href="#"> Purchase Now</a></div>
+            <div class="col-sm-6 col-md-4 text-sm-right mt-3 mt-sm-0"><a class="btn btn-sm btn-primary" href="#"> Purchase Now</a></div>
             <hr class="text-300 mt-5 opacity-25" />
             <div class="col-sm-6 px-0">
-              <nav class="nav"><a class="nav-link text-500" href="#">Home</a><a class="nav-link text-500" href="#">About</a><a class="nav-link text-500" href="#">Contact </a></nav>
+              <nav class="nav"><a class="nav-link text-500" href="#home">Home</a><a class="nav-link text-500" href="#about">About</a><a class="nav-link text-500" href="#pricing">Pricing </a></nav>
             </div>
             <div class="col-sm-6 text-sm-right">
               <ul class="list-unstyled list-inline">
@@ -253,12 +266,14 @@
                 <li class="list-inline-item mr-3"><a class="text-decoration-none" href="#!"><img class="list-social-icon" src="assets/img/icons/linkedin.svg" alt="" height="20" width="20" /></a></li>
                 <li class="list-inline-item mr-3"><a class="text-decoration-none" href="#!"><img class="list-social-icon" src="assets/img/icons/github.svg" alt="" height="20" width="20" /></a></li>
                 <li class="list-inline-item mr-3"><a class="text-decoration-none" href="#!"><img class="list-social-icon" src="assets/img/icons/pinterest.svg" alt="" height="20" width="20" /></a></li>
-                <li class="list-inline-item"><a class="text-decoration-none" href="#!"><img class="list-social-icon" src="assets/img/icons/instagram.svg" alt="" height="20" width="20" /></a></li>
+                <li class="list-inline-item"><a class="text-decoration-none" href="#!"></a></li>
               </ul>
             </div>
           </div>
-        </div>
-      </section>
+        </div><!-- end of .container-->
+      </section><!-- <section> close ============================-->
+      <!-- ============================================-->
+
     </main><!-- ===============================================-->
     <!--    End of Main Content-->
     <!-- ===============================================-->
@@ -270,10 +285,6 @@
     <!-- ===============================================-->
     <script src="vendors/popper/popper.min.js"></script>
     <script src="vendors/bootstrap/bootstrap.min.js"></script>
-    <script src="vendors/anchorjs/anchor.min.js"></script>
-    <script src="vendors/is/is.min.js"></script>
-    <script src="vendors/echarts/echarts.min.js"></script>
-    <script src="vendors/progressbar/progressbar.min.js"></script>
     <script src="assets/js/theme.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
   </body>
