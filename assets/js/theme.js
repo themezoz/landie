@@ -271,6 +271,7 @@ var detectorInit = function detectorInit() {
   var _window = window,
       is = _window.is;
   var html = document.querySelector('html');
+  console.log(html);
   is.opera() && addClass(html, 'opera');
   is.mobile() && addClass(html, 'mobile');
   is.firefox() && addClass(html, 'firefox');
