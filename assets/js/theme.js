@@ -1,11 +1,5 @@
 "use strict";
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -231,38 +225,6 @@ var utils = {
 };
 /* -------------------------------------------------------------------------- */
 
-/*                             Live Configuration                             */
-
-/* -------------------------------------------------------------------------- */
-
-var isFluid = getItemFromStore('isFluid', false);
-var isRTL = getItemFromStore('isRTL', false);
-var navbarPosition = getItemFromStore('navbarPosition', 'vertical');
-var navbarStyle = getItemFromStore('navbarStyle', 'transparent');
-
-var setCheckInputValue = function setCheckInputValue(id, value) {
-  var input = document.getElementById(id);
-  input && (input.checked = value);
-};
-
-setCheckInputValue('mode-fluid', isFluid);
-setCheckInputValue('mode-rtl', isRTL);
-setCheckInputValue("option-navbar-".concat(navbarPosition), true);
-setCheckInputValue("navbar-style-".concat(navbarStyle), true);
-
-if (navbarPosition === 'top') {
-  var buttonGroups = document.querySelector('.btn-group-navbar-style');
-  buttonGroups && buttonGroups.querySelectorAll('.btn-check').forEach(function (input) {
-    input.setAttribute('disabled', true);
-  });
-}
-
-var storage = {
-  isRTL: isRTL,
-  isFluid: isFluid
-};
-/* -------------------------------------------------------------------------- */
-
 /*                                  Detector                                  */
 
 /* -------------------------------------------------------------------------- */
@@ -271,7 +233,6 @@ var detectorInit = function detectorInit() {
   var _window = window,
       is = _window.is;
   var html = document.querySelector('html');
-  console.log(html);
   is.opera() && addClass(html, 'opera');
   is.mobile() && addClass(html, 'mobile');
   is.firefox() && addClass(html, 'firefox');
@@ -367,99 +328,11 @@ var navbarInit = function navbarInit() {
       navbar.style.transition = 'none';
     });
   }
-};
-/*-----------------------------------------------
-|   Node
------------------------------------------------*/
-
-
-var Node = /*#__PURE__*/function () {
-  function Node(node) {
-    _classCallCheck(this, Node);
-
-    this.node = node;
-  }
-
-  _createClass(Node, [{
-    key: "addClass",
-    value: function addClass(className) {
-      this.isValidNode() && this.node.classList.add(className);
-    }
-  }, {
-    key: "removeClass",
-    value: function removeClass(className) {
-      this.isValidNode() && this.node.classList.remove(className);
-    }
-  }, {
-    key: "toggleClass",
-    value: function toggleClass(className) {
-      this.isValidNode() && this.node.classList.toggle(className);
-    }
-  }, {
-    key: "hasClass",
-    value: function hasClass(className) {
-      this.isValidNode() && this.node.classList.contains(className);
-    }
-  }, {
-    key: "data",
-    value: function data(key) {
-      if (this.isValidNode()) {
-        try {
-          return JSON.parse(this.node.dataset[this.camelize(key)]);
-        } catch (e) {
-          return this.node.dataset[this.camelize(key)];
-        }
-      }
-
-      return null;
-    }
-  }, {
-    key: "attr",
-    value: function attr(name) {
-      return this.isValidNode() && this.node[name];
-    }
-  }, {
-    key: "setAttribute",
-    value: function setAttribute(name, value) {
-      this.isValidNode() && this.node.setAttribute(name, value);
-    }
-  }, {
-    key: "removeAttribute",
-    value: function removeAttribute(name) {
-      this.isValidNode() && this.node.removeAttribute(name);
-    }
-  }, {
-    key: "setProp",
-    value: function setProp(name, value) {
-      this.isValidNode() && (this.node[name] = value);
-    }
-  }, {
-    key: "on",
-    value: function on(event, cb) {
-      this.isValidNode() && this.node.addEventListener(event, cb);
-    }
-  }, {
-    key: "isValidNode",
-    value: function isValidNode() {
-      return !!this.node;
-    } // eslint-disable-next-line class-methods-use-this
-
-  }, {
-    key: "camelize",
-    value: function camelize(str) {
-      var text = str.replace(/[-_\s.]+(.)?/g, function (_, c) {
-        return c ? c.toUpperCase() : '';
-      });
-      return "".concat(text.substr(0, 1).toLowerCase()).concat(text.substr(1));
-    }
-  }]);
-
-  return Node;
-}(); // import detectorInit from './detector';
-// /* -------------------------------------------------------------------------- */
+}; // /* -------------------------------------------------------------------------- */
 // /*                            Theme Initialization                            */
 // /* -------------------------------------------------------------------------- */
 
 
-docReady(navbarInit); // docReady(detectorInit);
+docReady(navbarInit);
+docReady(detectorInit);
 //# sourceMappingURL=theme.js.map
