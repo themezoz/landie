@@ -1,0 +1,22 @@
+{
+  "bootstrap": {
+    "src": ["dist/js/bootstrap.min.js", "dist/js/bootstrap.min.js.map"],
+    "dest": "bootstrap"
+  },  
+ 
+  "@fortawesome/fontawesome-free": {
+    "src": "js/all.min.js",
+    "dest": "fontawesome"
+  },
+
+  "popper.js": {
+    "src": "dist/umd/popper.min.js",
+    "dest": "popper"
+  },
+
+  "flatpickr":{
+    "src": "dist/flatpickr.min.css",
+    "dest": "flatpickr"
+  }
+  
+}
