@@ -14,11 +14,9 @@
       "src/js/detector.js",
       "src/js/**/!(utils | detector  )*.js",
       "!src/js/theme.js",
-      "src/js/theme.js",
-      "!src/js/live-*.js",
-      "!src/js/config.navbar-vertical.js"
+      "src/js/theme.js"
     ],
-    "configNavbar": "src/js/config.navbar-vertical.js",
+    
     "dest": "assets/js"
   },
   "pug": {

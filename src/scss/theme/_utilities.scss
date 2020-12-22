@@ -4,7 +4,6 @@
 
 $grays-with-brand-color: map-merge($brand-colors, $grays) !default;
 $theme-all-colors: map_merge($grays-with-brand-color, $theme-colors) !default;
-
 $utilities: () !default;
 $utilities: map_merge(
   (
@@ -27,6 +26,7 @@ $utilities: map_merge(
     ),
     "font-weight": (
       property: font-weight,
+      class: fw,
       values: (
         thin: $font-weight-thin,
         lighter: $font-weight-lighter,
@@ -40,6 +40,7 @@ $utilities: map_merge(
       ),
     ),
     "font-size": (
+      rfs: true,
       property: font-size,
       class: fs,
       responsive: true,

@@ -1,4 +1,4 @@
-## Falcon, a theme by ThemeWagon team.
+## Landie, a theme by ThemeWagon team.
 ---
-Get the figma desing file here:
-[https://www.figma.com/file/wX672ke9PvFbwGNiCxefAd/Falcon-Design](https://www.figma.com/file/wX672ke9PvFbwGNiCxefAd/Falcon-Design)
+Thank you for using Landie. See the "public" folder, you will find everything ready to use there.
+If you want to use the gulp based workflow, cd to this directory in your terminal and run this command: `npm i && gulp`

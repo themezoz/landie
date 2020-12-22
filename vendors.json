@@ -14,9 +14,14 @@
     "dest": "popper"
   },
 
-  "flatpickr":{
-    "src": "dist/flatpickr.min.css",
-    "dest": "flatpickr"
+  "is_js": {
+    "src": "is.min.js",
+    "dest": "is"
+  },
+  
+  "anchor-js": {
+    "src": "anchor.min.js",
+    "dest": "anchorjs"
   }
   
 }
