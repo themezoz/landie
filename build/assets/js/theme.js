@@ -328,10 +328,63 @@ var navbarInit = function navbarInit() {
       navbar.style.transition = 'none';
     });
   }
+};
+/* -------------------------------------------------------------------------- */
+
+/*                           Navbar vertical config                           */
+
+/* -------------------------------------------------------------------------- */
+
+
+var NAVBAR_VERTICAL_CONFIG = {
+  isNavbarVerticalCollapsed: false
+};
+
+var isNull = function isNull(key) {
+  return JSON.parse(localStorage.getItem(key)) === null;
+};
+
+isNull('isNavbarVerticalCollapsed') && localStorage.setItem('isNavbarVerticalCollapsed', NAVBAR_VERTICAL_CONFIG.isNavbarVerticalCollapsed);
+var isNavbarVerticalCollapsed = JSON.parse(localStorage.getItem('isNavbarVerticalCollapsed'));
+
+if (isNavbarVerticalCollapsed) {
+  document.documentElement.classList.add('navbar-vertical-collapsed');
+}
+/* -------------------------------------------------------------------------- */
+
+/*                             Live Configuration                             */
+
+/* -------------------------------------------------------------------------- */
+
+
+var isFluid = getItemFromStore('isFluid', false);
+var isRTL = getItemFromStore('isRTL', false);
+var navbarPosition = getItemFromStore('navbarPosition', 'vertical');
+var navbarStyle = getItemFromStore('navbarStyle', 'transparent');
+
+var setCheckInputValue = function setCheckInputValue(id, value) {
+  var input = document.getElementById(id);
+  input && (input.checked = value);
+};
+
+setCheckInputValue('mode-fluid', isFluid);
+setCheckInputValue('mode-rtl', isRTL);
+setCheckInputValue("option-navbar-".concat(navbarPosition), true);
+setCheckInputValue("navbar-style-".concat(navbarStyle), true);
+
+if (navbarPosition === 'top') {
+  var buttonGroups = document.querySelector('.btn-group-navbar-style');
+  buttonGroups && buttonGroups.querySelectorAll('.btn-check').forEach(function (input) {
+    input.setAttribute('disabled', true);
+  });
+}
+
+var storage = {
+  isRTL: isRTL,
+  isFluid: isFluid
 }; // /* -------------------------------------------------------------------------- */
 // /*                            Theme Initialization                            */
 // /* -------------------------------------------------------------------------- */
-
 
 docReady(navbarInit);
 docReady(detectorInit);

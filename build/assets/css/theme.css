@@ -9231,31 +9231,31 @@ fieldset:disabled .btn {
 }
 
 .fs-2 {
-  font-size: 1.44rem !important;
+  font-size: calc(1.269rem + 0.228vw) !important;
 }
 
 .fs-3 {
-  font-size: 1.728rem !important;
+  font-size: calc(1.2978rem + 0.5736vw) !important;
 }
 
 .fs-4 {
-  font-size: 2.0736rem !important;
+  font-size: calc(1.33236rem + 0.98832vw) !important;
 }
 
 .fs-5 {
-  font-size: 2.48832rem !important;
+  font-size: calc(1.37383rem + 1.48598vw) !important;
 }
 
 .fs-6 {
-  font-size: 2.98598rem !important;
+  font-size: calc(1.4236rem + 2.08318vw) !important;
 }
 
 .fs-7 {
-  font-size: 3.58318rem !important;
+  font-size: calc(1.48332rem + 2.79982vw) !important;
 }
 
 .fs-8 {
-  font-size: 4.29982rem !important;
+  font-size: calc(1.55498rem + 3.65978vw) !important;
 }
 
 .fst-italic {
@@ -9266,39 +9266,39 @@ fieldset:disabled .btn {
   font-style: normal !important;
 }
 
-.font-weight-thin {
+.fw-thin {
   font-weight: 100 !important;
 }
 
-.font-weight-lighter {
+.fw-lighter {
   font-weight: 200 !important;
 }
 
-.font-weight-light {
+.fw-light {
   font-weight: 300 !important;
 }
 
-.font-weight-normal {
+.fw-normal {
   font-weight: 400 !important;
 }
 
-.font-weight-medium {
+.fw-medium {
   font-weight: 500 !important;
 }
 
-.font-weight-semi-bold {
+.fw-semi-bold {
   font-weight: 600 !important;
 }
 
-.font-weight-bold {
+.fw-bold {
   font-weight: 700 !important;
 }
 
-.font-weight-bolder {
+.fw-bolder {
   font-weight: 800 !important;
 }
 
-.font-weight-black {
+.fw-black {
   font-weight: 900 !important;
 }
 
@@ -11123,25 +11123,25 @@ fieldset:disabled .btn {
     font-size: 1.2rem !important;
   }
   .fs-sm-2 {
-    font-size: 1.44rem !important;
+    font-size: calc(1.269rem + 0.228vw) !important;
   }
   .fs-sm-3 {
-    font-size: 1.728rem !important;
+    font-size: calc(1.2978rem + 0.5736vw) !important;
   }
   .fs-sm-4 {
-    font-size: 2.0736rem !important;
+    font-size: calc(1.33236rem + 0.98832vw) !important;
   }
   .fs-sm-5 {
-    font-size: 2.48832rem !important;
+    font-size: calc(1.37383rem + 1.48598vw) !important;
   }
   .fs-sm-6 {
-    font-size: 2.98598rem !important;
+    font-size: calc(1.4236rem + 2.08318vw) !important;
   }
   .fs-sm-7 {
-    font-size: 3.58318rem !important;
+    font-size: calc(1.48332rem + 2.79982vw) !important;
   }
   .fs-sm-8 {
-    font-size: 4.29982rem !important;
+    font-size: calc(1.55498rem + 3.65978vw) !important;
   }
   .text-sm-left {
     text-align: left !important;
@@ -12523,25 +12523,25 @@ fieldset:disabled .btn {
     font-size: 1.2rem !important;
   }
   .fs-md-2 {
-    font-size: 1.44rem !important;
+    font-size: calc(1.269rem + 0.228vw) !important;
   }
   .fs-md-3 {
-    font-size: 1.728rem !important;
+    font-size: calc(1.2978rem + 0.5736vw) !important;
   }
   .fs-md-4 {
-    font-size: 2.0736rem !important;
+    font-size: calc(1.33236rem + 0.98832vw) !important;
   }
   .fs-md-5 {
-    font-size: 2.48832rem !important;
+    font-size: calc(1.37383rem + 1.48598vw) !important;
   }
   .fs-md-6 {
-    font-size: 2.98598rem !important;
+    font-size: calc(1.4236rem + 2.08318vw) !important;
   }
   .fs-md-7 {
-    font-size: 3.58318rem !important;
+    font-size: calc(1.48332rem + 2.79982vw) !important;
   }
   .fs-md-8 {
-    font-size: 4.29982rem !important;
+    font-size: calc(1.55498rem + 3.65978vw) !important;
   }
   .text-md-left {
     text-align: left !important;
@@ -13923,25 +13923,25 @@ fieldset:disabled .btn {
     font-size: 1.2rem !important;
   }
   .fs-lg-2 {
-    font-size: 1.44rem !important;
+    font-size: calc(1.269rem + 0.228vw) !important;
   }
   .fs-lg-3 {
-    font-size: 1.728rem !important;
+    font-size: calc(1.2978rem + 0.5736vw) !important;
   }
   .fs-lg-4 {
-    font-size: 2.0736rem !important;
+    font-size: calc(1.33236rem + 0.98832vw) !important;
   }
   .fs-lg-5 {
-    font-size: 2.48832rem !important;
+    font-size: calc(1.37383rem + 1.48598vw) !important;
   }
   .fs-lg-6 {
-    font-size: 2.98598rem !important;
+    font-size: calc(1.4236rem + 2.08318vw) !important;
   }
   .fs-lg-7 {
-    font-size: 3.58318rem !important;
+    font-size: calc(1.48332rem + 2.79982vw) !important;
   }
   .fs-lg-8 {
-    font-size: 4.29982rem !important;
+    font-size: calc(1.55498rem + 3.65978vw) !important;
   }
   .text-lg-left {
     text-align: left !important;
@@ -15323,25 +15323,25 @@ fieldset:disabled .btn {
     font-size: 1.2rem !important;
   }
   .fs-xl-2 {
-    font-size: 1.44rem !important;
+    font-size: calc(1.269rem + 0.228vw) !important;
   }
   .fs-xl-3 {
-    font-size: 1.728rem !important;
+    font-size: calc(1.2978rem + 0.5736vw) !important;
   }
   .fs-xl-4 {
-    font-size: 2.0736rem !important;
+    font-size: calc(1.33236rem + 0.98832vw) !important;
   }
   .fs-xl-5 {
-    font-size: 2.48832rem !important;
+    font-size: calc(1.37383rem + 1.48598vw) !important;
   }
   .fs-xl-6 {
-    font-size: 2.98598rem !important;
+    font-size: calc(1.4236rem + 2.08318vw) !important;
   }
   .fs-xl-7 {
-    font-size: 3.58318rem !important;
+    font-size: calc(1.48332rem + 2.79982vw) !important;
   }
   .fs-xl-8 {
-    font-size: 4.29982rem !important;
+    font-size: calc(1.55498rem + 3.65978vw) !important;
   }
   .text-xl-left {
     text-align: left !important;
@@ -16723,25 +16723,25 @@ fieldset:disabled .btn {
     font-size: 1.2rem !important;
   }
   .fs-xxl-2 {
-    font-size: 1.44rem !important;
+    font-size: calc(1.269rem + 0.228vw) !important;
   }
   .fs-xxl-3 {
-    font-size: 1.728rem !important;
+    font-size: calc(1.2978rem + 0.5736vw) !important;
   }
   .fs-xxl-4 {
-    font-size: 2.0736rem !important;
+    font-size: calc(1.33236rem + 0.98832vw) !important;
   }
   .fs-xxl-5 {
-    font-size: 2.48832rem !important;
+    font-size: calc(1.37383rem + 1.48598vw) !important;
   }
   .fs-xxl-6 {
-    font-size: 2.98598rem !important;
+    font-size: calc(1.4236rem + 2.08318vw) !important;
   }
   .fs-xxl-7 {
-    font-size: 3.58318rem !important;
+    font-size: calc(1.48332rem + 2.79982vw) !important;
   }
   .fs-xxl-8 {
-    font-size: 4.29982rem !important;
+    font-size: calc(1.55498rem + 3.65978vw) !important;
   }
   .text-xxl-left {
     text-align: left !important;
@@ -16871,6 +16871,93 @@ fieldset:disabled .btn {
   }
   .rounded-xxl-0 {
     border-radius: 0 !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .fs-2 {
+    font-size: 1.44rem !important;
+  }
+  .fs-3 {
+    font-size: 1.728rem !important;
+  }
+  .fs-4 {
+    font-size: 2.0736rem !important;
+  }
+  .fs-5 {
+    font-size: 2.48832rem !important;
+  }
+  .fs-6 {
+    font-size: 2.98598rem !important;
+  }
+  .fs-7 {
+    font-size: 3.58318rem !important;
+  }
+  .fs-8 {
+    font-size: 4.29982rem !important;
+  }
+  .fs-sm-2 {
+    font-size: 1.44rem !important;
+  }
+  .fs-sm-3 {
+    font-size: 1.728rem !important;
+  }
+  .fs-sm-4 {
+    font-size: 2.0736rem !important;
+  }
+  .fs-sm-5 {
+    font-size: 2.48832rem !important;
+  }
+  .fs-sm-6 {
+    font-size: 2.98598rem !important;
+  }
+  .fs-sm-7 {
+    font-size: 3.58318rem !important;
+  }
+  .fs-sm-8 {
+    font-size: 4.29982rem !important;
+  }
+  .fs-md-2 {
+    font-size: 1.44rem !important;
+  }
+  .fs-md-3 {
+    font-size: 1.728rem !important;
+  }
+  .fs-md-4 {
+    font-size: 2.0736rem !important;
+  }
+  .fs-md-5 {
+    font-size: 2.48832rem !important;
+  }
+  .fs-md-6 {
+    font-size: 2.98598rem !important;
+  }
+  .fs-md-7 {
+    font-size: 3.58318rem !important;
+  }
+  .fs-md-8 {
+    font-size: 4.29982rem !important;
+  }
+  .fs-lg-2 {
+    font-size: 1.44rem !important;
+  }
+  .fs-lg-3 {
+    font-size: 1.728rem !important;
+  }
+  .fs-lg-4 {
+    font-size: 2.0736rem !important;
+  }
+  .fs-lg-5 {
+    font-size: 2.48832rem !important;
+  }
+  .fs-lg-6 {
+    font-size: 2.98598rem !important;
+  }
+  .fs-lg-7 {
+    font-size: 3.58318rem !important;
+  }
+  .fs-lg-8 {
+    font-size: 4.29982rem !important;
   }
 }
 
@@ -17362,6 +17449,166 @@ label {
 
 .fontawesome-i2svg-active .icon-indicator {
   opacity: 1;
+}
+
+/*-----------------------------------------------
+|   Object fit and Z-index
+-----------------------------------------------*/
+.fit-cover {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.z-index-2 {
+  z-index: 2 !important;
+}
+
+.z-index--1 {
+  z-index: -1;
+}
+
+/*-----------------------------------------------
+|   Sidebar
+-----------------------------------------------*/
+.sticky-sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1020;
+  top: 5.3125rem;
+}
+
+/*-----------------------------------------------
+|   Custom circle
+-----------------------------------------------*/
+.circle-dashed {
+  border: 1px dashed #111B47;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+/*-----------------------------------------------
+|   Miscellaneous
+-----------------------------------------------*/
+.hover-text-decoration-none:hover, .hover-text-decoration-none:focus {
+  text-decoration: none;
+}
+
+.resize-none {
+  resize: none;
+}
+
+.collapsed .collapse-icon {
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.collapse-icon {
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+[data-dismiss="dropdown"] *,
+[data-offset-top] *,
+[data-toggle="collapse"] *,
+[data-toggle="tooltip"] *,
+[data-toggle="popover"] * {
+  pointer-events: none;
+}
+
+/*-----------------------------------------------
+|   Outline
+-----------------------------------------------*/
+.outline-none {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.outline-none:hover, .outline-none:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/*-----------------------------------------------
+|   Vertical Line (used in kanban header)
+-----------------------------------------------*/
+.vertical-line:after {
+  position: absolute;
+  content: "";
+  height: 75%;
+  width: 1px;
+  background: #929ECC;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.vertical-line.vertical-line-400:after {
+  background-color: #6F7CB2;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Transition                                 */
+/* -------------------------------------------------------------------------- */
+.transition-base {
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.transition-none {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+.fsp-75 {
+  font-size: 75%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    Width                                   */
+/* -------------------------------------------------------------------------- */
+.min-w-0 {
+  min-width: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Terms sidebar                               */
+/* -------------------------------------------------------------------------- */
+.terms-sidebar .nav-link {
+  color: #505F98;
+  font-weight: 500;
+  font-family: "Roboto", "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.terms-sidebar .nav-link.active {
+  color: #111B47;
 }
 
 /*-----------------------------------------------
