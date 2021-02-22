@@ -56,10 +56,10 @@
     "@fortawesome/fontawesome-free": "^5.14.0",
     "@joeattardi/emoji-button": "^4.1.0",
     "@shopify/draggable": "^1.0.0-beta.8",
-    "bootstrap": "5.0.0-alpha3",
-    "popper.js": "^1.16.1",
+    "anchor-js": "^4.2.2",
+    "bootstrap": "5.0.0-beta2",
     "is_js": "^0.9.0",
-    "anchor-js": "^4.2.2"
+    "popper.js": "^1.16.1"
   },
   "browserslist": [
     "last 5 version"
